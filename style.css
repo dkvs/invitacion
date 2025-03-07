@@ -18,7 +18,6 @@ body{
   display: grid;
   width: 100%;
   margin: 0px auto;
-  padding-top: 10px;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "banner banner"
@@ -55,7 +54,7 @@ body{
     order: initial;
     border-color: inherit;
     background-repeat: no-repeat;
-    background-position: 45% 32%;
+    background-position: 35%;
     background-size: cover;
     background-attachment: scroll;
     background-image: url(https://github.com/dkvs/wedding/blob/main/img/gokuymilk2.jpg?raw=true);
@@ -430,3 +429,9 @@ h1, h2
     }
   }
   
+  @media only screen and (max-width: 767px) {
+    .content {
+      max-width: 75%;        
+      width: 100%;
+    }
+}
