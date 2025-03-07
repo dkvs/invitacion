@@ -4,6 +4,7 @@ body{
     color: #313fbd;
     font-family: "Montserrat";
     font-weight: 400;
+    padding: 0px;
 }
 
 
@@ -17,7 +18,8 @@ body{
 .contenedor {
   display: grid;
   width: 100%;
-  margin: 0px auto;
+  margin: 0px auto; 
+  background-color: #313fbd; 
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "banner banner"
@@ -57,7 +59,7 @@ body{
     background-position: 35%;
     background-size: cover;
     background-attachment: scroll;
-    background-image: url(https://github.com/dkvs/wedding/blob/main/img/gokuymilk2.jpg?raw=true);
+    background-image: url(/img/gokuymilk2.jpg);
     background-clip: padding-box;
     flex-direction: column;
     align-items: center;
@@ -70,12 +72,12 @@ body{
 
 .contador{
   grid-area: contador;
-
+  background-color: white;
 }
 
 .cont{
   grid-area: cont;
-
+  background-color: white;
 }
 
 
@@ -90,11 +92,11 @@ body{
 .text3{
   grid-area: text3;
   color: #313fbd;
+  background-color: white;
 }
 
 .text4{
   grid-area: text4;
-  background-color: #313fbd;
 }
 
 .texto-w{
@@ -106,6 +108,7 @@ body{
 
 
 .itinerario{
+  background-color: white;
   grid-area: itinerario;
   display: flex;
   width: 100%;
@@ -115,7 +118,8 @@ body{
   flex-wrap: nowrap;
   row-gap: 20px;
   column-gap: 62px;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .text1, .text2{
@@ -132,7 +136,6 @@ body{
   overflow: visible;
   order: initial;
   border-color: inherit;
-  background-color: #313fbd;
   row-gap: 20px;
   column-gap: 62px;
   flex-direction: column;
@@ -429,10 +432,13 @@ h1, h2
       }
     }
   }
-  
+
   @media only screen and (max-width: 767px) {
     .content {
       max-width: 75%;        
       width: 100%;
     }
 }
+
+
+
