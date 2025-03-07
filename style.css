@@ -351,6 +351,7 @@ h1, h2
       padding: 2em;
       background: #1a237b;
       color: white;
+      font-weight: 600;
     }
     header {
       font-weight: bold;
