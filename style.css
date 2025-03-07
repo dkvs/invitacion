@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    color: rgb(46, 46, 46);
+    color: #313fbd;
     font-family: "Montserrat";
     font-weight: 400;
 }
@@ -58,7 +58,7 @@ body{
     background-position: 45% 32%;
     background-size: cover;
     background-attachment: scroll;
-    background-image: url(/img/Captura\ de\ pantalla\ 2025-03-06\ a\ las\ 23.17.31.png);
+    background-image: url(/img/gokuymilk2.jpg);
     background-clip: padding-box;
     flex-direction: column;
     align-items: center;
@@ -90,17 +90,16 @@ body{
 
 .text3{
   grid-area: text3;
-  color: #2e2e2e;
+  color: #313fbd;
 }
 
 .text4{
   grid-area: text4;
-  background-color: #2e2e2e;
-
+  background-color: #313fbd;
 }
 
 .texto-w{
-  color: #2e2e2e;
+  color: #313fbd;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
@@ -123,7 +122,6 @@ body{
 .text1, .text2{
   display: flex;
   justify-content: center;
-  box-shadow: 0px 0px #00000070;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 20px;
@@ -135,7 +133,7 @@ body{
   overflow: visible;
   order: initial;
   border-color: inherit;
-  background-color: #2e2e2e;
+  background-color: #313fbd;
   row-gap: 20px;
   column-gap: 62px;
   flex-direction: column;
@@ -147,7 +145,6 @@ body{
 .text3, .text4{
   display: flex;
   justify-content: center;
-  box-shadow: 0px 0px #00000070;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 20px;
@@ -219,7 +216,7 @@ h1, h2
     padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid #2e2e2e;
+    border: 1px solid #313fbd;
     background-color: rgba(0, 0, 0, 0.01);
     flex-direction: column;
     align-items: center;
@@ -242,7 +239,6 @@ h1, h2
 }
 
 .boton , .boton-cta{
-    border: 1px solid;
     font-size: 14px;
     padding-left: 28px;
     padding-right: 28px;
@@ -252,6 +248,12 @@ h1, h2
 
 .boton-cta{
   color: white;
+  border: 1px solid #ffffff;
+}
+
+.boton {
+  border: 1px solid #313fbd;
+
 }
 
 .text{
@@ -286,7 +288,7 @@ h1, h2
   
   li {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.2em;
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
@@ -326,7 +328,7 @@ h1, h2
 
   .modal-window {
     position: fixed;
-    background-color: #64626293;
+    background-color: #313fbd97;
     top: 0;
     right: 0;
     bottom: 0;
@@ -348,7 +350,7 @@ h1, h2
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 2em;
-      background: #2e2e2e;
+      background: #313fbd;
       color: white;
     }
     header {
@@ -371,7 +373,7 @@ h1, h2
     width: 70px;
     text-decoration: none;
     &:hover {
-      color: black;
+      color: #313fbd;
     }
   }
   
@@ -404,5 +406,27 @@ h1, h2
   .logo {
     max-width: 150px;
     display: block;
+  }
+  
+  #modal-maps {  
+    &.modal-content {
+      .modal-header {
+        margin: 0;
+        padding: 8px;
+        border: none;
+      }
+      .modal-body {
+        padding: 5px;
+        margin: 0;
+        overflow: hidden;
+        iframe {
+          
+        }
+      }
+      .modal-footer {
+        padding: 0;
+        margin: 0;
+      }
+    }
   }
   
