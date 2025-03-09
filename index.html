@@ -18,18 +18,55 @@
     <title>Invitación Seba y Dai</title>
 </head>
 <body>
-    <main class="principal">
-
+ <main class="principal">
+        
+            
         <div class="contenedor">
+            
+            <div class="sliderbanner">
+                <div class="slideshow-container">
 
-                    <div class="banner">
+                    <div class="mySlides fade">
+                    <img class="imagenes" src="https://raw.githubusercontent.com/dkvs/wedding/refs/heads/main/img/gokuymilk2.jpg" style="width:100%">
                     </div>
+    
+                    <div class="mySlides fade">
+                    <img class="imagenes" src="https://raw.githubusercontent.com/dkvs/wedding/refs/heads/main/img//slider1.JPG" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides fade">
+                    <img class="imagenes" src="https://raw.githubusercontent.com/dkvs/wedding/refs/heads/main/img//slider2.JPG" style="width:100%">
+                    </div>
+    
+                    </div>
+                    <br>
+    
+                    <div style="text-align:center">
+                    <span class="dot">&nbsp</span> 
+                    <span class="dot">&nbsp</span> 
+                    <span class="dot">&nbsp</span> 
+                    </div>
+            </div>
+                    <!-- <div class="banner">
+                    </div> -->
 
                     <div class="cont">
                         <p class="casamos">¡NOS CASAMOS!</p>
                         <p>SEBA Y DAI</p>
                     </div>
 
+
+
+                    <div class="text1">
+                        <div class="texto">
+                          <p>Nuestros Karencios dan el sí</p>
+                        </div>
+                    </div>
+
+                    <div class="banner1">
+                    </div>
+
+                <div class="itinerario">
                     <div class="contador">
                         <h1 id="headline"></h1>
                         <div id="countdown">
@@ -46,18 +83,6 @@
                         <span>🎂</span>
                         </div>
                     </div>
-
-
-                    <div class="text1">
-                        <div class="texto">
-                          <p>Nuestros Karencios dan el sí</p>
-                        </div>
-                    </div>
-
-                    <div class="banner1">
-                    </div>
-
-                <div class="itinerario">
                     <div class="content">
                         <div class="title">
                             <p>ITINERARIO</p>
@@ -241,11 +266,30 @@
                         <a class="" href="https://docs.google.com/forms/d/e/1FAIpQLSdyOSyEZr15J_vdM5SSuRC5h14TJrP76TlQBJImzXHfLKMiLg/viewform?embedded=true">COMPLETAR FORMULARIO</a>
                     </div>
                 </div>
+            </div>
 
+    </main>    
 
-               
-</div>
-    </main>
+<script>
+    let slideIndex = 0;
+    showSlides();
     
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
 </body>
-</html>
+</html>    
