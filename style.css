@@ -104,6 +104,15 @@ body{
 .cont{
   grid-area: cont;
   background-color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 34px;
+}
+
+.casamos{
+  color: #f5361d;
+  font-weight: 500;
 }
 
 
