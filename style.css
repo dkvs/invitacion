@@ -33,6 +33,7 @@ body{
                        "text3 text3"
                        "text4 text4"
                        "text5 text5";
+
                       
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -90,7 +91,7 @@ body{
   background-position: 35%;
   background-size: cover;
   background-attachment: scroll;
-  background-image: url(https://raw.githubusercontent.com/dkvs/wedding/refs/heads/main/img/gatitos.JPG);
+  background-image: url(/gatitos.JPG);
   background-clip: padding-box;
   flex-direction: column;
   align-items: center;
@@ -143,11 +144,6 @@ body{
   grid-area: text5;
 }
 
-.text5{
-  background-color: white;
-}
-
-
 .texto-w{
   color: #313fbd;
   text-transform: uppercase;
@@ -169,6 +165,7 @@ body{
   column-gap: 62px;
   padding-bottom: 10px;
 }
+
 .text1{
   display: flex;
   justify-content: center;
@@ -212,8 +209,6 @@ body{
 .text5, .text2{
   background-color: white;
 }
-
-
 
 
 
@@ -287,15 +282,6 @@ h1, h2
     width: 70px;
 }
 
-.musica {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    align-content: center;
-    align-items: center;
-}
-
 .boton , .boton-cta, .boton-cta-mp{
     font-size: 14px;
     padding-left: 28px;
@@ -317,6 +303,10 @@ h1, h2
 .boton {
   border: 1px solid #313fbd;
 
+}
+
+.parrafo1{
+  font-size: 18px;
 }
 
 .outfit{
@@ -341,6 +331,13 @@ h1, h2
     margin: 0;
   }
   
+  .musica{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
   
   .contador {
     text-align: center;
@@ -591,3 +588,4 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+
