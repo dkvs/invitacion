@@ -186,7 +186,7 @@ body{
   align-items: center;
 }
 
-.text3, .text4, .text2{
+.text3, .text4{
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -446,8 +446,6 @@ h1, h2
     }
   }
   
-  /* Demo Styles */
-  
 
 
   
@@ -460,7 +458,8 @@ h1, h2
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    margin-top: 24px;
   }
   
   .modal-window {
@@ -588,4 +587,3 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
-
