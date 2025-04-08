@@ -91,7 +91,7 @@ body{
   background-position: 35%;
   background-size: cover;
   background-attachment: scroll;
-  background-image: url(/gatitos.JPG);
+  background-image: url(img/gatitos.JPG);
   background-clip: padding-box;
   flex-direction: column;
   align-items: center;
