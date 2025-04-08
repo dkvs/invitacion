@@ -25,11 +25,11 @@ body{
   grid-template-areas: "banner banner"
                        "sliderbanner sliderbanner"
                        "cont cont"
-                       "contador contador"
                        "text1 text1"
                        "banner1 banner1"
-                       "itinerario itinerario"
+                       "contador contador"
                        "text2 text2"
+                       "itinerario itinerario"
                        "text3 text3"
                        "text4 text4"
                        "text5 text5";
@@ -169,8 +169,7 @@ body{
   column-gap: 62px;
   padding-bottom: 10px;
 }
-
-.text1, .text2{
+.text1{
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -190,7 +189,7 @@ body{
   align-items: center;
 }
 
-.text3, .text4{
+.text3, .text4, .text2{
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -209,6 +208,11 @@ body{
   align-content: center;
   align-items: center;
 }
+
+.text5, .text2{
+  background-color: white;
+}
+
 
 
 
